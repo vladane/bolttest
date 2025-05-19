@@ -1,0 +1,139 @@
+/* Цвета редкостей, согласно оригинальной версии */
+.rarity-common {
+  color: #B0B0B0 !important; /* Серый */
+}
+
+.rarity-uncommon {
+  color: #87CEEB !important; /* Голубой */
+}
+
+.rarity-rare {
+  color: #5174ED !important; /* Синий */
+}
+
+.rarity-exotic {
+  color: #4CAF50 !important; /* Зеленый */
+}
+
+.rarity-epic {
+  color: #D16EFF !important; /* Светло-фиолетовый */
+}
+
+.rarity-mythical {
+  color: #9C27B0 !important; /* Фиолетовый */
+}
+
+.rarity-legendary {
+  color: #FFEB3B !important; /* Желтый */
+}
+
+.rarity-relic {
+  color: #FF9800 !important; /* Оранжевый */
+}
+
+.rarity-immortal {
+  color: #FFD700 !important; /* Золотой */
+}
+
+.rarity-ancient {
+  color: #F44336 !important; /* Красный */
+}
+
+/* Стилизация для выпадающих списков */
+select option[value="common"] {
+  background-color: rgba(176, 176, 176, 0.2);
+  color: #B0B0B0;
+}
+
+select option[value="uncommon"] {
+  background-color: rgba(135, 206, 235, 0.2);
+  color: #87CEEB;
+}
+
+select option[value="rare"] {
+  background-color: rgba(81, 116, 237, 0.2);
+  color: #5174ED;
+}
+
+select option[value="exotic"] {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+select option[value="epic"] {
+  background-color: rgba(209, 110, 255, 0.2);
+  color: #D16EFF;
+}
+
+select option[value="mythical"] {
+  background-color: rgba(156, 39, 176, 0.2);
+  color: #9C27B0;
+}
+
+select option[value="legendary"] {
+  background-color: rgba(255, 235, 59, 0.2);
+  color: #FFEB3B;
+}
+
+select option[value="relic"] {
+  background-color: rgba(255, 152, 0, 0.2);
+  color: #FF9800;
+}
+
+select option[value="immortal"] {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: #FFD700;
+}
+
+select option[value="ancient"] {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #F44336;
+}
+
+/* Применяем тени и обводку для текста (как в оригинале) */
+.rarity-text {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+
+/* Добавляем стили для рамок карточек по редкости */
+.unit-card-common {
+  border-color: #B0B0B0 !important;
+}
+
+.unit-card-uncommon {
+  border-color: #87CEEB !important;
+}
+
+.unit-card-rare {
+  border-color: #5174ED !important;
+}
+
+.unit-card-exotic {
+  border-color: #4CAF50 !important;
+}
+
+.unit-card-epic {
+  border-color: #D16EFF !important;
+}
+
+.unit-card-mythical {
+  border-color: #9C27B0 !important;
+}
+
+.unit-card-legendary {
+  border-color: #FFEB3B !important;
+}
+
+.unit-card-relic {
+  border-color: #FF9800 !important;
+}
+
+.unit-card-immortal {
+  border-color: #FFD700 !important;
+}
+
+.unit-card-ancient {
+  border-color: #F44336 !important;
+}

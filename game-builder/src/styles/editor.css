@@ -1,0 +1,98 @@
+/* Общие стили для редактора */
+.node-editor-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.node-editor {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #1a1a2e;
+}
+
+/* Стили для узлов */
+.node {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  min-width: 150px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.node.selected {
+  box-shadow: 0 0 0 2px white, 0 4px 8px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.node .node-title {
+  padding: 8px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.node .node-content {
+  padding: 8px;
+}
+
+/* Стили для портов */
+.port {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.port:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Стили для соединений */
+.connection {
+  position: absolute;
+  pointer-events: none;
+}
+
+.connection path {
+  stroke-width: 2px;
+  fill: none;
+}
+
+/* Стили для элементов управления */
+input, select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 12px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Кнопки */
+button {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(0.9);
+}

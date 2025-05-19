@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  input, select, textarea {
+    @apply bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 cursor-text;
+  }
+  
+  /* Только для действительно неактивных полей */
+  input[disabled], textarea[disabled], select[disabled],
+  input[readonly], textarea[readonly] {
+    @apply bg-gray-100 dark:bg-gray-800 cursor-not-allowed;
+  }
+}
